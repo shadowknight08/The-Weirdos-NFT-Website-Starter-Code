@@ -5,20 +5,22 @@ const Btn = styled.button`
 display: inline-block;
 background-color:${props =>props.theme.text};
 color: ${props => props.theme.body};
-outline:none ;
+outline: none;
 border: none;
 font-size:${props => props.theme.fontsm};
 padding: 0.9rem 2.3rem;
 border-radius: 50px;
 cursor: pointer;
 transition: all 0.2 ease;
-& :hover{
-transition: scale(0.9);
+position: relative;
+
+&:hover{
+transform: scale(0.9);
 
 }
 
-& ::after{
-    content: '';
+&::after{
+    content: ' ';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -27,22 +29,21 @@ transition: scale(0.9);
     width: 100%;
     height:100%;
     border-radius: 50px;
-    transition: all 0.2s ease ;
+    transition: all 0.2s ease;
 
 }
 
 
-&:hover ::after{
+&:hover::after{
 transform: translate(-50%,-50%) scale(1);
 padding: 0.3rem;
 
 }
-
 `
 const Button = ({ text, link }) => {
     return (
         <Btn>
-            <a href={link} arial-label={text} target="blank" rel="noreforerre">
+            <a href={link} arial-label={text} target="blank" rel="noreferrer">
                 {text}
 
             </a>

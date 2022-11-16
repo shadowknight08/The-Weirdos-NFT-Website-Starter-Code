@@ -16,9 +16,9 @@ transition: all 0.2s ease;
 const Logo = () => {
   return (
       <LogoText>
-          <Link>
+          
               RM
-          </Link>
+    
          
           
       </LogoText>

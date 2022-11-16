@@ -5,7 +5,7 @@ import TypeWritertext from '../TypeWritertext'
 import RoundTextBlack from '../../assets/Rounded-Text-Black.png';
 
 const Section = styled.section`
-min-height: ${props => `calc(100vh -${props.theme.navheight})`};
+min-height:90vh;
 width: 100vw;
 position:relative;
 background-color:${props => props.theme.body};
@@ -62,8 +62,8 @@ border-radius: 50%;
 
 
 position: absolute;
-top: 50%;
-left: 50%;
+top: 26%;
+left: 26%;
 transform: translate((-50%,-50%));
   
 background-color: ${props => props.theme.text};

@@ -22,7 +22,7 @@ margin: 0 auto;
 
 
 `
-const Menu = styled.ui`
+const Menu = styled.ul`
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -49,23 +49,25 @@ cursor: pointer;
 `
 const Navigation = () => {
   return (
-   
-      <Section>
-          <NavBar>
-              <Logo />
-               <Menu>
-                  <MenuItem>Home</MenuItem>
-                  <MenuItem>About</MenuItem>
-                  <MenuItem>Roadmap</MenuItem>
-                  <MenuItem>Showcase</MenuItem>
-                  <MenuItem>Team</MenuItem>
-                  <MenuItem>Faq</MenuItem>
-              </Menu>
-              <Button text="Connect Wallet" link="https://google.com" />
-              
 
-          </NavBar>
-      </Section>
+          <Section>
+              <NavBar>
+                  <Logo />
+                  <Menu>
+                      <MenuItem>Home</MenuItem>
+                      <MenuItem>About</MenuItem>
+                      <MenuItem>Roadmap</MenuItem>
+                      <MenuItem>Showcase</MenuItem>
+                      <MenuItem>Team</MenuItem>
+                      <MenuItem>Faq</MenuItem>
+                  </Menu>
+                  <Button text="Connect Wallet" link="https://google.com" />
+
+
+              </NavBar>
+          </Section>
+   
+      
   )
 }
 

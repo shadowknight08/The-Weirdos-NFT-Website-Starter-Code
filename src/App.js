@@ -17,7 +17,7 @@ function App() {
       <GlobalStyles />
 
       <ThemeProvider theme={light}>
-        <Navigation />
+        <Navigation/>
         <Home />
         <About />
         <Roadmap />
