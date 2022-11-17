@@ -97,7 +97,7 @@ const MemberComponent = ({img, name =" ",position=" "}) => {
    return(
     <Item>
       <ImageContainer>
-        <img src={img} alt={name}>
+        <img src={img} alt={name}/>
       </ImageContainer>
       <Name>{name}</Name>
       <position>{position}</position>
