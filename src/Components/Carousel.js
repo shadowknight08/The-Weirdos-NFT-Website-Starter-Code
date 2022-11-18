@@ -102,7 +102,7 @@ const Carousel = () => {
               modules={[EffectCards, Pagination, Navigation, Autoplay]}
               className="mySwiper"
           >
-              <SwiperSlide>  <img src ={img} alt = "The Weardos  "/> </SwiperSlide>
+              <SwiperSlide>  <img src ={img2} alt = "The Weardos  "/> </SwiperSlide>
               <SwiperSlide>  <img src ={img2} alt = "The Weardos  "/> </SwiperSlide>
               <SwiperSlide>  <img src ={img2} alt = "The Weardos  "/> </SwiperSlide>
               <SwiperSlide>  <img src ={img3} alt = "The Weardos  "/> </SwiperSlide>

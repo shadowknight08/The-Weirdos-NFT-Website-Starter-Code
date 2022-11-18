@@ -1,7 +1,7 @@
 import React,{ useState}from 'react'
 import styled from 'styled-components'
 import { Minus}  from '../Icons/Minus'
-import { Plus}  from '../Icons/Minus'
+import {Plus}  from '../Icons/Plus'
 
 const Container = styled.div`
 cursor: pointer;

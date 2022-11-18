@@ -1,6 +1,8 @@
 import React, { useLayoutEffect, useRef } from 'react'
 import styled from 'styled-components'
 import Accordion from '../Accordion';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 
 const Section = styled.section`
 min-height: 100vh;
@@ -49,8 +51,8 @@ const Faq = () => {
       start:'top top',
       end:'bottom top',
       pin:true,
-      pinSpacing: false;
-      scrub:true;
+      pinSpacing: false,
+      scrub:true,
       // markers:true,
 
     })
@@ -63,7 +65,7 @@ const Faq = () => {
   }, [])
 
   return (
-    <Section ref = useRef={ref}>
+    <Section ref = {ref} >
       <Title>Faq</Title>
       <Container>
         <Box>
