@@ -11,8 +11,6 @@ import { Pagination,Navigation,Autoplay ,EffectCards } from "swiper";
 
 
 
-
-import img from '../assets/Nfts/bighead.svg';
 import imgl from '../assets/Nfts/bighead-1.svg';
 import img2 from '../assets/Nfts/bighead-2.svg';
 import img3 from '../assets/Nfts/bighead-3.svg';
