@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Button from './Button';
-import imgl from '../assets/Nfts/bighead-1.svg';
+import img1 from '../assets/Nfts/bighead-1.svg';
 import img2 from '../assets/Nfts/bighead-2.svg';
 import img3 from '../assets/Nfts/bighead-3.svg';
 import img4 from '../assets/Nfts/bighead-4.svg';
@@ -13,10 +13,10 @@ const Section = styled.section`
 width: 100vw;
 height: 25rem;
 position:relative;
-border-top: 2px solid $(props => props.theme.text);
-border-top: 2px solid $(props => props.theme.text);
+border-top: 2px solid ${props => props.theme.text};
+border-top: 2px solid ${props => props.theme.text};
 
-background-color:${props => `rgba(${props.theme.textRgba},0.9)`};
+background-color:${props => `rgba(${props.theme.textRgba},0.9)`}
 
 display: flex;
 justify-content:center;
@@ -55,7 +55,7 @@ width: 35%;
 display: flex;
 justify-content: flex-end;
 `
-const JoiNow = styled.button`
+const JoinNow = styled.button`
 display: inline-block;
 background-color:${props =>props.theme.body};
 color: ${props => props.theme.text};

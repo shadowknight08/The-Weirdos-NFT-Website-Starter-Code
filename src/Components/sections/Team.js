@@ -14,7 +14,7 @@ import img9 from '../../assets/Nfts/bighead-8.svg';
 import img10 from '../../assets/Nfts/bighead-9.svg';
 import ConfettiComponent from './Confetti';
 
-const Section = styled.Section`
+const section = styled.section`
 min-height: 100vh;
 width : 100vh;
 background-color:${props => props.theme.body};
@@ -34,7 +34,6 @@ const Title = styled.h1`
 const container= styled.div`
 width: 75%;
 margin: 2rem auto;
-
 display: flex;
 justify-content: space-around;
 align-items: center;

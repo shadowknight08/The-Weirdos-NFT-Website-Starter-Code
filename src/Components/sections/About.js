@@ -72,7 +72,7 @@ align-self :flex-start
 `
 const About = () => {
   return (
-    <Section>
+    <Section id ="about">
       <Container>
         <Box>
             <Carousel/>

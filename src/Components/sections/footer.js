@@ -2,11 +2,13 @@ import React from "react";
 import styled from 'styled-components';
 import Button from "../Button";
 import Logo from "../Logo";
+import Banner from "../Banner";
 
 import Facebook from "../../Icons/Facebook";
 import Instagram from "../../Icons/Instagram";
 import Twitter from "../../Icons/Twitter";
 import LinkedIn from "../../Icons/LinkedIn";
+
 
 const Section = styled.section`
 min-height: 100vh;
@@ -42,7 +44,7 @@ align-items: center;
 margin: 1rem auto;
 
 &>*{
-    padding-right: 0%.5rem;
+    padding-right: 0.5rem;
     transition: all 0.2s ease;
 
     &:hover{
@@ -87,57 +89,56 @@ a{
 `
 
 const Footer = () => {
-    return(
-        <Section>
-            <Banner/>
-            <Container>
+  return (
+    <Section>
+      <Banner />
+      <Container>
         <Left>
-        <Logo/>
-        <IconList>
+          <Logo />
+          <IconList>
             <a href="http://facebook,com" target="_blank"
-            rel="noopener noreferrer"
+              rel="noopener noreferrer"
             >
-                <Facebook />
+              <Facebook />
             </a>
             <a href="http://instagram,com" target="_blank"
-            rel="noopener noreferrer"
+              rel="noopener noreferrer"
             >
-                <Instagram />
+              <Instagram />
             </a>
             <a href="http://twitter,com" target="_blank"
-            rel="noopener noreferrer"
+              rel="noopener noreferrer"
             >
-                <Twitter />
+              <Twitter />
             </a>
             <a href="http://linkedin,com" target="_blank"
-            rel="noopener noreferrer"
+              rel="noopener noreferrer"
             >
-                <LinkedIn />
+              <LinkedIn />
             </a>
-        </IconList>
+          </IconList>
         </Left>
         <MenuItems>
-        <Items>Home</Items>
-        <Items>About</Items>
-        <Items>Roadmap</Items>
-
-        <Items>Showcase</Items>
-        <Items>About</Items>
-        <Items>Faq</Items>
+          <Item>Home</Item>
+          <Item>About</Item>
+          <Item>Roadmap</Item>
+          <Item>Showcase</Item>
+          <Item>About</Item>
+          <Item>Faq</Item>
         </MenuItems>
-            </Container>
-            <Button>
-                <span>
-                    &copy; {new Date().getFullYear()} weirdos Club. All rights reserved.
-                </span>
-                <span>
-                    Made with &#10084; by <a href="http;//youtube.com/codebucks" target="_blank" rel="noopener noreferrer">
-                        CodeBucks
-                    </a>
-                </span>
-            </Button>
-        </Section>
-    )
+      </Container>
+      <Button>
+        <span>
+          &copy; {new Date().getFullYear()} weirdos Club. All rights reserved.
+        </span>
+        <span>
+          Made with &#10084; by <a href="http;//youtube.com/codebucks" target="_blank" rel="noopener noreferrer">
+            CodeBucks
+          </a>
+        </span>
+      </Button>
+    </Section>
+  )
 }
 
 export default Footer
