@@ -12,16 +12,16 @@ import img7 from '../../assets/Nfts/bighead-6.svg';
 import img8 from '../../assets/Nfts/bighead-7.svg';
 import img9 from '../../assets/Nfts/bighead-8.svg';
 import img10 from '../../assets/Nfts/bighead-9.svg';
-import ConfettiComponent from '../Confetti';
+import ConfettiComponent from './Confetti';
 
 const Section = styled.section`
 min-height: 100vh;
-width : 100vh;
+width : 100vw;
 background-color:${props => props.theme.body};
 position: relative;
 `
 const Title = styled.h1`
-  font-size: ${(props) => props.theme.fontxx1};
+  font-size: ${(props) => props.theme.fontxxl};
   text-transform: capitalize;
   color: ${(props) => props.theme.text};
   display: flex;
@@ -30,13 +30,13 @@ const Title = styled.h1`
   margin: 1rem auto;
   border-bottom: 2px solid ${(props) => props.theme.text};
   width: fit-content;
-  `;
+  `
 const Container = styled.div`
 width: 75%;
 margin: 2rem auto;
 
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 align-items: center;
 flex-wrap: wrap;
 `

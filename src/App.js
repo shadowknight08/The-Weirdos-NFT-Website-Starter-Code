@@ -20,8 +20,7 @@ function App() {
         <Navigation/>
         <Home />
         <About />
-        <Roadmap />
-        <Showcase />
+       
         <Team />
         <Faq />
         <Footer />

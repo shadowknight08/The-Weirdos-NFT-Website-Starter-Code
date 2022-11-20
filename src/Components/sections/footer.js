@@ -19,8 +19,8 @@ color: ${(props) => props.theme.text};
 
 
 display: flex;
-/*justify-content: center;*/
-/*align-items:center;*/
+/* justify-content: center;
+align-items:center; */
 flex-direction: column;
 `
 const Container = styled.div`
