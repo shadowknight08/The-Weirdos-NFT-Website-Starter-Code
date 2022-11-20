@@ -12,9 +12,9 @@ import img7 from '../../assets/Nfts/bighead-6.svg';
 import img8 from '../../assets/Nfts/bighead-7.svg';
 import img9 from '../../assets/Nfts/bighead-8.svg';
 import img10 from '../../assets/Nfts/bighead-9.svg';
-import ConfettiComponent from './Confetti';
+import ConfettiComponent from '../Confetti';
 
-const section = styled.section`
+const Section = styled.section`
 min-height: 100vh;
 width : 100vh;
 background-color:${props => props.theme.body};
@@ -31,9 +31,10 @@ const Title = styled.h1`
   border-bottom: 2px solid ${(props) => props.theme.text};
   width: fit-content;
   `;
-const container= styled.div`
+const Container = styled.div`
 width: 75%;
 margin: 2rem auto;
+
 display: flex;
 justify-content: space-around;
 align-items: center;
@@ -64,6 +65,7 @@ margin: 0 auto;
 background-color: ${props => props.theme. carouselColor};
 border: 1px solid ${props => props.theme.text};
 padding: 1rem;
+
 border-radius: 20px;
 cursor: pointer;
 
@@ -74,7 +76,7 @@ img{
 }
 `
 const Name = styled.h2`
-font-size: ${props => props.theme.font1g};
+font-size: ${props => props.theme.fontlg};
 display: flex;
 align-items: center;
 justify-content: center;
@@ -99,16 +101,16 @@ const MemberComponent = ({img, name =" ",position=" "}) => {
         <img src={img} alt={name}/>
       </ImageContainer>
       <Name>{name}</Name>
-      <position>{position}</position>
+      <Position>{position}</Position>
     </Item>
    )
 }
 const Team = () => {
   return (
-    <section>
+    <Section>
       <ConfettiComponent />
-      <title> Team </title>
-      <container>
+      <Title> Team </Title>
+      <Container>
         <MemberComponent img={img1}  name="SKYBLAZE" position='founder'/>
         <MemberComponent img={img2}  name="MAGNUM" position='Co-Founder'/>
         <MemberComponent img={img3}  name="MONKEY KING" position='Director' />
@@ -119,8 +121,8 @@ const Team = () => {
         <MemberComponent img={img8}  name="MONK" position='Web3 Developer'/>
         <MemberComponent img={img9}  name="BANANA" position='Graphic Designer'/>
 
-      </container>
-    </section>
+      </Container>
+    </Section>
   )
 }
 
