@@ -90,7 +90,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 text-transform: capitalize;
-color: ${props => `rgba(${props.theme.textRgba},0,9)`};
+color: ${props => props.theme.text};
 font-weight:400;
 `
 
@@ -111,7 +111,7 @@ const Team = () => {
       <ConfettiComponent />
       <Title> Team </Title>
       <Container>
-        <MemberComponent img={img1}  name="SKYBLAZE" position='founder'/>
+        <MemberComponent img={img1}  name="SKYBLAZE" position="founder"/>
         <MemberComponent img={img2}  name="MAGNUM" position='Co-Founder'/>
         <MemberComponent img={img3}  name="MONKEY KING" position='Director' />
         <MemberComponent img={img4}  name="BLACK PANTHER" position='manager' />
