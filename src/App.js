@@ -10,7 +10,7 @@ import Roadmap from './Components/sections/Roadmap';
 import Showcase from './Components/sections/Showcase';
 import Team  from './Components/sections/Team';
 import Faq from './Components/sections/Faq';
-import Footer from './Components/sections/Footer';
+import Footer from './Components/sections/footer';
 function App() {
   return (
     <>
