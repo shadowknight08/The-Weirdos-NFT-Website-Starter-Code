@@ -49,8 +49,8 @@ const Faq = () => {
       start:'top top',
       end:'bottom top',
       pin:true,
-      pinSpacing: false;
-      scrub:true;
+      pinSpacing: false,
+      scrub:true,
       // markers:true,
 
     })
@@ -63,7 +63,7 @@ const Faq = () => {
   }, [])
 
   return (
-    <Section ref = useRef={ref}>
+    <Section ref ={ref}>
       <Title>Faq</Title>
       <Container>
         <Box>
